@@ -11,6 +11,7 @@ RUN apt update -qq \
   sudo \
   bash \
   curl \
+  openssh-client \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
