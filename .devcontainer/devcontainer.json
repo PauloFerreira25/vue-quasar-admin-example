@@ -1,0 +1,7 @@
+{
+    "name": "vue-quasar-admin-example",
+    "service": "ubuntu",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "ubuntu",
+}

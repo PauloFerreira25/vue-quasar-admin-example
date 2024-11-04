@@ -1,0 +1,19 @@
+x-environment: &default-environment
+  ENVIRONMENT_ACTIVE: local
+
+services:
+  ubuntu:
+    image: ubuntu
+    privileged: true
+    tty: true
+    build:
+      context: ..
+      dockerfile: .devcontainer/containers/ubuntu/Dockerfile
+    environment:
+      <<: *default-environment
+    volumes:
+      - ..:/workspace:consistent
+    user: ubuntu
+    ports:
+      - 9000:9000
+    network_mode: "host"
