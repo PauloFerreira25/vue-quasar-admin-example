@@ -4,4 +4,11 @@
     "dockerComposeFile": "docker-compose.yml",
     "workspaceFolder": "/workspace",
     "remoteUser": "ubuntu",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Vue.volar"
+            ]
+        }
+    },
 }
